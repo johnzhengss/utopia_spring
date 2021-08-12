@@ -31,3 +31,9 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Properties ###
+*.properties
+
+booking_service/
+flight_service/
