@@ -1,0 +1,6 @@
+booking_service/*
+demo_service/*
+*/src/test/*
+*/target/*
+*/src/main/resources/*
+*/.*
