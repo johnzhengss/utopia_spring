@@ -80,8 +80,13 @@ public class BookingService {
     }
 
     public List<FlightBookings> getFlightByBookingId(int booking_id){
-        List<FlightBookings> list = flightBookingsRepository.findAllByBookingId(booking_id);
-        return list;
+        try{
+            List<FlightBookings> list = flightBookingsRepository.findAllByBookingId(booking_id);
+            return list;
+        }catch (Exception e){
+            System.out.println(e);
+            return null;
+        }
     }
 
 }

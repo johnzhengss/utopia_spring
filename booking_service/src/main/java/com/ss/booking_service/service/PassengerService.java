@@ -46,10 +46,13 @@ public class PassengerService {
 
     }
 
-    public List<Passenger> getPassengersByBookingId(int id){
-        List<Passenger> list = passengerRepository.findAllByBookingId(id);
-        return list;
+    public List<Passenger> getPassengersByBookingId(int bid){
+        try {
+            List<Passenger> list = passengerRepository.findAllByBookingId(bid);
+            return list;
+        }catch (Exception e){
+            System.out.println(e);
+            return null;
+        }
     }
-
-
 }
