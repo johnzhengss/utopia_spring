@@ -23,7 +23,7 @@ public class BookingServiceTest {
 
     @Test
     public void getBookingById() {
-        Booking booking = service.getBookingById(100);
+        Booking booking = service.getBookingById(1);
         System.out.println(booking);
     }
 
